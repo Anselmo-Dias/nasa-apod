@@ -33,31 +33,38 @@ function formattedData(valor) {
   }
 
   if (valor.length > 4) {
-    valor = [ano, mes, dia].join("/");
+    valor = [ano, mes, dia].join("-");
   } else if (valor.length > 0) {
-    valor = [ano, mes].join("/");
+    valor = [ano, mes].join("-");
   }
 
   return valor;
 }
 
-const url = 'https://api.nasa.gov/planetary/apod'
+const url = 'https://api.nasa.gov/planetary/apod?api_key=BD8WcweBfA4DYh8GerYXAAGpwXZccBSgmQUOruvM'
 
 fetch(url)
 .then((response) => response.json())
-.then((data) => console.log(data))
+.then((data) => {
+  photo.setAttribute('src', data.hdurl)
+})
 
 load.classList.add('none')
 
 function searchPhoto() {
   photo.classList.add('none')
   load.classList.remove('none')
-  setTimeout(() => {
+
+  fetch(`${url}&date=${input.value}`)
+  .then((response) => response.json())
+  .then((data) => {
+    photo.setAttribute('src', data.hdurl)
+  })
+  .finally(() => {
     photo.classList.remove('none')
     load.classList.add('none')
 
     buttonReset.classList.remove('none')
     buttonSearch.classList.add('none')
-    }, 5000)
-  return
+  })
 }
