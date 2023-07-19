@@ -1,5 +1,9 @@
 var buttonReset = document.getElementById("reset");
+var buttonSearch = document.getElementById("search");
+var photo = document.getElementById("photo");
+var load = document.getElementById("load");
 var input = document.getElementById("dataInput");
+
 
 buttonReset.addEventListener("click", () => {
   input.value = "";
@@ -7,11 +11,16 @@ buttonReset.addEventListener("click", () => {
 
 input.addEventListener("input", function () {
   let valor = input.value;
-  let formattedValue = formatarData(valor);
+  let formattedValue = formattedData(valor);
   input.value = formattedValue;
+
+  if(valor.length >= 10) {
+    buttonReset.classList.add('none')
+    buttonSearch.classList.remove('none')
+  }
 });
 
-function formatarData(valor) {
+function formattedData(valor) {
   valor = valor.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
 
   let dia = valor.substring(6, 8);
@@ -32,9 +41,23 @@ function formatarData(valor) {
   return valor;
 }
 
-
 const url = 'https://api.nasa.gov/planetary/apod'
 
 fetch(url)
 .then((response) => response.json())
 .then((data) => console.log(data))
+
+load.classList.add('none')
+
+function searchPhoto() {
+  photo.classList.add('none')
+  load.classList.remove('none')
+  setTimeout(() => {
+    photo.classList.remove('none')
+    load.classList.add('none')
+
+    buttonReset.classList.remove('none')
+    buttonSearch.classList.add('none')
+    }, 5000)
+  return
+}

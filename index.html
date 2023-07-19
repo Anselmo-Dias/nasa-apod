@@ -13,10 +13,10 @@
   <header>
       <div class="content">
         <lottie-player src="https://lottie.host/f55a0b7c-2313-4c52-b4bd-004e46708a6f/ATWq3tFuuQ.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
-        <nav>
+        <nav class="btn-none">
           <ul>
-            <li><a href="#">Imagens</a></li>
-            <li><a href="#">Favoritos</a></li>
+            <li><a href="#photos">Imagens</a></li>
+            <li><a href="#gallery">Galeria</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </nav>
@@ -30,12 +30,12 @@
         <h1>Nasa <span>Apod</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
 
-        <button class="btn" type="button">Saiba mais</button>
+        <button class="btn btn-none" type="button">Saiba mais</button>
       </div>
       <aside class="video">
         <div class="video">
           <div class="size">
-            <iframe width="90%" height="540" src="https://www.youtube.com/embed/JfXp_YEQRRI" title="NASA API Tutorial | For Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/JfXp_YEQRRI" title="NASA API Tutorial | For Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </aside>
@@ -50,7 +50,7 @@
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
-                Location
+                Space
               </p>
               <p>
                 <img src="./assets/clock.svg" alt="">
@@ -65,7 +65,7 @@
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
-                Location
+                Space
               </p>
               <p>
                 <img src="./assets/clock.svg" alt="">
@@ -83,7 +83,7 @@
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
-                Location
+                Space
               </p>
               <p>
                 <img src="./assets/clock.svg" alt="">
@@ -98,7 +98,7 @@
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
-                Location
+                Space
               </p>
               <p>
                 <img src="./assets/clock.svg" alt="">
@@ -117,13 +117,31 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
         <input id="dataInput" type="text" placeholder="YYYY/MM/DD">
-        <button id="reset" type="reset">reset</button>
+        <button id="reset" type="button">reset</button>
+        <button id="search" class="none" onclick="searchPhoto()">serach</button>
 
-        <img src="https://images.unsplash.com/photo-1689164712603-7122c72ddef6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        <img id="photo" src="https://images.unsplash.com/photo-1689164712603-7122c72ddef6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+
+
+        <div class="load" >
+          <lottie-player id="load" src="https://lottie.host/7c5db5f5-1872-4947-b430-0250135414fa/oa4BI1Zzty.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="content wrapper">
+        <div class="box">
+          <img src="" alt="">
+          <strong>EMAIL</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
+          <a href=""></a>
+        </div>
       </div>
     </section>
   </main>
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
   <script src="main.js"></script>
 </body>
