@@ -106,6 +106,11 @@ a {
   border-radius: 5px;
 
   border: 1px solid var(--brand-dark);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .none {
@@ -324,12 +329,12 @@ aside.video .video .size iframe {
   gap: 2.4rem;
 }
 
-.card button {
+.card .btn-secundary {
   margin-bottom: 3.2rem;
   transition: 0.2s ease-in;
 }
 
-.card button:hover {
+.card .btn-secundary:hover {
   background-color: var(--primary-color);
   color: #fff;
 }

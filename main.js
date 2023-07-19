@@ -59,6 +59,11 @@ function searchPhoto() {
   .then((response) => response.json())
   .then((data) => {
     photo.setAttribute('src', data.hdurl)
+    console.log(data)
+
+    if(data.code == 400) {
+      
+    }
   })
   .finally(() => {
     photo.classList.remove('none')
