@@ -49,6 +49,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -240,7 +244,6 @@ aside.video .video .size iframe {
 
   margin-top: 8rem;
 
-  margin-bottom: 3.2rem;
 }
 #photos .card-container .card {
   width: 100%;
@@ -294,4 +297,75 @@ aside.video .video .size iframe {
 
 .card button {
   margin-bottom: 3.2rem;
+  transition: 0.2s ease-in;
+}
+
+.card button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Galerry */
+
+#gallery {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery .content {
+  margin-top: 11rem;
+  text-align: center;
+}
+
+#gallery .content strong {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+#gallery .content p {
+  color: var(--paragraph);
+  font-size: 18px;
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+}
+
+#gallery .content img {
+  width: 100%;
+  
+}
+
+#gallery .content input {
+  margin-bottom: 6rem;
+
+  width: 100%;
+  max-width: 200px;
+  min-height: 30px;
+
+  border-radius: 5px;
+
+  border: 1px solid var(--primary-color);
+
+  outline: none;
+
+  padding: 0 10px;
+
+  font-family: var(--primary-font);
+}
+
+#gallery .content button {
+  width: 100%;
+  max-width: 50px;
+  min-height: 30px; 
+
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
 }
