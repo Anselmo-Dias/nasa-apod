@@ -431,3 +431,64 @@ aside.video .video .size iframe {
   font-family: var(--primary-font);
   font-size: 1.5rem;
 }
+
+/* Contact */
+
+#contact {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--primary-font);
+
+  margin-top: 12rem;
+
+  padding-bottom: 7rem;
+}
+
+#contact .content {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact .content .box {
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  text-align: center;
+}
+
+#contact .box img {
+  margin-bottom: 2.4rem;
+}
+
+#contact .box strong {
+  margin-bottom: 1.6rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+
+#contact .box p {
+  width: 100%;
+  margin-bottom: 2.4rem;
+  color: var(--paragraph);
+  font-weight: 400;
+}
+
+#contact .box a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+
