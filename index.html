@@ -20,7 +20,7 @@
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
-      <button class="btn" type="button">Saiba mais</button>
+      <a href="https://api.nasa.gov/" target="_blank" class="btn">Saiba mais</a>
     </div>
   </header>
 
@@ -28,9 +28,9 @@
     <section id="start">
       <div class="content wrapper">
         <h1>Nasa <span>Apod</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <p>Este site está consumindo a api da NASA. Caso queira se aprofundar mais sobre como usa-lá, fique a vontade para clicar em saiba mais e se aventurar com essa "API".</p>
 
-        <button class="btn btn-none" type="button">Saiba mais</button>
+        <a href="https://api.nasa.gov/" target="_blank" class="btn btn-none" >Saiba mais</a>
       </div>
       <aside class="video">
         <div class="video">
@@ -45,8 +45,8 @@
       <div class="content wrapper">
         <div class="card-container">
           <div class="card">
-            <strong>Job Title <span>Derpartament</span></strong>
-            <p class="paragrah">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+            <strong>Black hole <span>nasa</span></strong>
+            <p class="paragrah">What does a black hole look like? To find out, radio telescopes from around the Earth coordinated observations of black holes with the largest known event horizons on the sky.   </p>
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
@@ -60,8 +60,8 @@
             <a href="https://apod.nasa.gov/apod/image/2205/M87bh_EHT_2629.jpg" target="_blank" class="btn-secundary" type="button">View now</a>
           </div>
           <div class="card">
-            <strong>Job Title <span>Derpartament</span></strong>
-            <p class="paragrah">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+            <strong>Moon blocked<span>nasa</span></strong>
+            <p class="paragrah">The featured image shows an image of the partially eclipsed Sun through clouds as it was setting over Patagonia, Argentina. </p>
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
@@ -78,8 +78,8 @@
 
         <div class="card-container">
           <div class="card">
-            <strong>Job Title <span>Derpartament</span></strong>
-            <p class="paragrah">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+            <strong>Mercury <span>nasa</span></strong>
+            <p class="paragrah">Long exposures of our Solar System's innermost planet may reveal something unexpected: a tail.</p>
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
@@ -93,8 +93,8 @@
             <a href="https://apod.nasa.gov/apod/image/2205/MercuryTailPleiades_Voltmer_1448.jpg" target="_blank" class="btn-secundary" type="button">View now</a>
           </div>
           <div class="card">
-            <strong>Job Title <span>Derpartament</span></strong>
-            <p class="paragrah">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+            <strong>Planets Over Egyptian Pyramid <span>nasa</span></strong>
+            <p class="paragrah"> In the featured image taken last month, these planets were captured over the Step Pyramid of Djoser, a UNESCO World Heritage Site.</p>
             <div class="icons">
               <p>
                 <img src="./assets/location.svg" alt="">
@@ -114,14 +114,14 @@
     <section id="gallery">
       <div class="content wrapper">
         <strong>Gallery</strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Coloque uma data e veja qual foi a foto destaque do dia.</p>
 
         <input id="dataInput" type="text" placeholder="YYYY/MM/DD">
         <button id="reset" type="button">reset</button>
         <button id="search" class="none" onclick="searchPhoto()">serach</button>
 
         <img id="photo" src="https://images.unsplash.com/photo-1689164712603-7122c72ddef6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
-
+        <p id="description"></p>
 
         <div class="load" >
           <lottie-player id="load" src="https://lottie.host/7c5db5f5-1872-4947-b430-0250135414fa/oa4BI1Zzty.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
@@ -134,22 +134,22 @@
         <div class="box">
           <img src="./assets/email.svg" alt="">
           <strong>EMAIL</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
-          <a href="">LINK</a>
+          <p>Em caso de um contato não muito urgente tendo um retorno em até 2 dias úteis, essa é a melhor opção.</p>
+          <a href="mailto:anselmodias1617@gmail.com">LINK</a>
         </div>
 
         <div class="box">
           <img src="./assets/message.svg" alt="">
           <strong>WHATSAPP</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
-          <a href="">LINK</a>
+          <p>Em caso de contratação de serviço ou uma conversa mais prolongada, essa é a melhor opção.</p>
+          <a href="https://api.whatsapp.com/send?phone=+5579981057602&text=Oi! Gostaria de saber mais sobre seu trabalho">LINK</a>
         </div>
 
         <div class="box">
           <img src="./assets/phone.svg" alt="">
           <strong>TELEFONE</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
-          <a href="">LINK</a>
+          <p>Caso procure entrar em contato de forma mais imediada, sugiro essa opção.</p>
+          <a href="tel:+5579981057602">LINK</a>
         </div>
       </div>
     </section>

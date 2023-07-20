@@ -1,5 +1,6 @@
 var buttonReset = document.getElementById("reset");
 var buttonSearch = document.getElementById("search");
+var description = document.getElementById("description");
 var photo = document.getElementById("photo");
 var load = document.getElementById("load");
 var input = document.getElementById("dataInput");
@@ -47,6 +48,8 @@ fetch(url)
 .then((response) => response.json())
 .then((data) => {
   photo.setAttribute('src', data.hdurl)
+  const text = data.explanation.slice(0, data.explanation.length / 2).concat('...')
+  description.innerText = text
 })
 
 load.classList.add('none')
@@ -62,7 +65,7 @@ function searchPhoto() {
     console.log(data)
 
     if(data.code == 400) {
-      
+      window.location.href = "./page404/index2.html";
     }
   })
   .finally(() => {
